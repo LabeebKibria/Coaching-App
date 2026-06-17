@@ -1,56 +1,83 @@
-# Welcome to your Expo app 👋
+# Coaching App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform coaching platform for strength and powerlifting coaches that centralizes workout tracking, video review, athlete management, and performance analysis.
 
-## Get started
+## Problem
 
-1. Install dependencies
+Many coaches currently manage athletes through a combination of text messages, video submissions, and spreadsheets. Athletes send lift videos via text while coaches manually track exercise data such as exercise name, sets, reps, weight, and RPE. This workflow is time-consuming, difficult to scale, and lacks centralized performance tracking.
 
-   ```bash
-   npm install
-   ```
+## Solution
 
-2. Start the app
+Coaching App aims to provide a single platform where athletes can log workouts, upload videos, and track training history while coaches can review performance, provide feedback, and monitor progress from one dashboard.
 
-   ```bash
-   npx expo start
-   ```
+## MVP Features
 
-In the output, you'll find options to open the app in a
+### Athlete Experience
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* Log exercises, sets, reps, weight, and RPE
+* Upload lift videos from mobile or web
+* View workout history
+* Receive coach feedback
+* Track progress over time
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Coach Experience
 
-## Get a fresh project
+* Manage multiple athletes
+* Review workout submissions
+* Watch lift videos
+* Leave feedback and coaching notes
+* Monitor athlete progress
+* View training history and trends
 
-When you're ready, run:
+### Tech Stack
 
-```bash
-npm run reset-project
-```
+* Expo + React Native
+* TypeScript
+* Supabase Auth
+* Supabase PostgreSQL
+* Supabase Storage
+* GitHub
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Development Status
 
-### Other setup steps
+## 🚧 Early-stage development
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### Current focus:
 
-## Learn more
+* Supabase integration
+* User authentication
+* Role-based routing (Coach vs Client)
+* Database architecture
+* MVP development
 
-To learn more about developing your project with Expo, look at the following resources:
+### Long-Term Vision
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Build the operating system for strength coaches by replacing fragmented workflows with a unified platform for athlete management, communication, workout tracking, video review, and performance analytics.
 
-## Join the community
+### Planned Architecture
 
-Join our community of developers creating universal apps.
+#### Roles
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Coach
+* Client
+
+### Core Entities
+
+* Profiles
+* Coach-Client Relationships
+* Workout Sessions
+* Exercise Entries
+* Set Entries
+* Videos
+* Comments
+
+### Future Features
+
+* Program builder
+* Training block management
+* Progress analytics
+* Estimated 1RM tracking
+* Team coaching support
+* Athlete messaging
+* Stripe subscription billing
+* AI-powered performance insights
